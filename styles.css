@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 320px;
+    height: 525px;
+    background-color: #000;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 10px solid black;
+}
+
+.display_container {
+    height: 100px;
+    background: #FDD7E4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: rgb(43, 42, 46);
+}
+
+
+
+.keypad_container {
+    height: 425px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.operator,
+.number,
+.blank,
+.decimal {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffb6db;
+}
+
+.operator:hover,
+.number:hover,
+.decimal:hover {
+    box-shadow: 3px 3px 20px #575757,
+        -3px -3px 20px #757575;
+
+}
+
+.blank {
+    background-color: #0000009d;
+}
